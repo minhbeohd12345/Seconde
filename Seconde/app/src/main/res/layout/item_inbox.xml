@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Reusable inbox row (85dp high) matching Inbox1 -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+    android:paddingStart="0dp"
+    android:paddingEnd="0dp">
+
+    <!-- Rounded card bg -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="false"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rectangle256"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Avatar -->
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/sample1"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/circle_clip"/>
+
+    <!-- Sender -->
+    <TextView
+        android:id="@+id/tvSender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Milano"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvDate"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="13dp"/>
+
+    <!-- Date -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sep 30"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Snippet -->
+    <TextView
+        android:id="@+id/tvSnippet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Part 8 of  8: Missions Complete\nDear Melancholia, you have completed the..."
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSender"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="60dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

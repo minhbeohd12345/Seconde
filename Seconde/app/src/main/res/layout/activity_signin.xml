@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SignIn -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:layout_width="360dp"
+    tools:layout_height="800dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/cd_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="117dp"
+        tools:ignore="ContentDescription"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="215dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your account details."
+        android:textColor="#6E6E6E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="258dp"/>
+
+    <!-- Input #1 -->
+
+    <!-- Label 1 -->
+    <TextView
+        android:id="@+id/tvLabel1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Username or email"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="289dp"/>
+
+    <!-- Field background 1 -->
+    <View
+        android:id="@+id/fieldBg1"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:background="@drawable/bg_sign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel1"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Input #2 -->
+
+    <!-- Label 2 -->
+    <TextView
+        android:id="@+id/tvLabel2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fieldBg1"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Field background 2 -->
+    <View
+        android:id="@+id/fieldBg2"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/bg_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLabel2" />
+
+    <!-- Forgot password? -->
+    <TextView
+        android:id="@+id/tvForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textColor="#6A1B9A"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fieldBg2"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Sign in -->
+    <TextView
+        android:id="@+id/btnSignIn"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:text="Sign in"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:background="@drawable/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvForgot"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Seconde</string>
+    <string name="cd_logo">App logo</string>
+    <string name="cd_illu">Onboarding illustration</string>
+    <string name="cd_logo">App logo</string>
+    <string name="cd_google">Google sign-in</string>
+    <string name="cd_add_account">Add account</string>
+    <string name="cd_search">search</string>
+</resources>
